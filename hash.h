@@ -15,7 +15,12 @@ class hash1{
 
     public:
         int HASH(string cle);  //Done
+        void ajouterItem(string nom, string tel); //Done
         void afficherItem(); //Done
+        int  nombreItems(int index); //Done
+        void afficherItemsDansIndex(int index); // Done
+        void chercherItem(string nom); //Done
+        void supprimerItem(string nom); //Done
 
 };
 
