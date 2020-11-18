@@ -11,6 +11,5 @@ int main()
     int index;
     index = hashObj.HASH("Kerzazi");
 
-
     return 0;
 }
