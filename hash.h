@@ -8,10 +8,6 @@ class hash1{
 
 
     public:
-        hash1();
-        int HASH(string cle);
-
-        // les fonctions à developper
 
         void afficherItemsDansIndex(int index);
 
