@@ -17,26 +17,6 @@ int hash1::HASH(string cle)
     return index;
 }
 
-void hash1::ajouterItem(string nom, string tel) {
-    int hashValue = HASH(nom);
-    auto& cell = table[hashValue];
-    auto bItr = begin(cell);
-    bool keyExists = false;
-    for (; bItr != end(cell); bItr++) {
-        if(bItr->first == nom) {
-            keyExists = true;
-            bItr -> second = tel;
-            cout << "[WARNING] Key exists. Value replaced" <<endl;
-            break;
-        }
-    }
-
-    if(!keyExists)
-        cell.emplace_back(nom, tel);
-    
-    return;
-}
-
 void hash1::afficherItem() {
     for (int i{}; i<tailleTableau; i++) {
         if (table[i].size() == 0) continue;
