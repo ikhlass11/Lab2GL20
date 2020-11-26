@@ -20,7 +20,7 @@ int main()
     HT.ajouterItem("be", "05379861"); //same key as the previous one, to check
 
 
-    HT.afficherItem();
+    HT.afficherItem(); //bruh
 
 
     return 0;
